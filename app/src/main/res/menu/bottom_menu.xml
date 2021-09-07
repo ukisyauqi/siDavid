@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/secondFragment"
+        android:icon="@drawable/ic_baseline_local_hospital_24"
+        android:title="Nearby Hospital" />
+    <item
+        android:id="@+id/thirdFragment"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="About Covid" />
+    <item
+        android:id="@+id/fourthFragment"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting" />
+</menu>
