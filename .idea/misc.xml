@@ -3,11 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/activity_main.xml" value="0.1272644927536232" />
+        <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/fragment_first.xml" value="0.20923913043478262" />
         <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/fragment_fourth.xml" value="0.20923913043478262" />
         <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/fragment_second.xml" value="0.20923913043478262" />
         <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/fragment_third.xml" value="0.20923913043478262" />
+        <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/layout/item_rv.xml" value="0.33" />
         <entry key="..\:/Users/ukisy/AndroidStudioProjects/kopet/app/src/main/res/menu/bottom_menu.xml" value="0.225" />
       </map>
     </option>

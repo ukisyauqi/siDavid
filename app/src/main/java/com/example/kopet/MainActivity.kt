@@ -6,6 +6,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.kopet.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -15,7 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         val navController = findNavController(R.id.fragment)
-        val appBarConfiguration = AppBarConfiguration((setOf(R.id.firstFragment, R.id.secondFragment, R.id.thirdFragment, R.id.fourthFragment)))
+        val appBarConfiguration = AppBarConfiguration((setOf(
+            R.id.firstFragment,
+            R.id.secondFragment,
+            R.id.thirdFragment,
+            R.id.fourthFragment
+        )))
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         bottomNavigationView.setupWithNavController(navController)

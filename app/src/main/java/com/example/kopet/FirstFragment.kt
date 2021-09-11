@@ -6,15 +6,19 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.github.mikephil.charting.utils.ColorTemplate
-import kotlin.math.log
+import kotlinx.android.synthetic.main.fragment_first.*
 
 class FirstFragment : Fragment() {
+
+    private var layoutManager: RecyclerView.LayoutManager? = null
+    private var adapter: RecyclerView.Adapter<RvAdapter.ViewHolder>? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,6 +47,14 @@ class FirstFragment : Fragment() {
         barDataSet.setColors(ColorTemplate.JOYFUL_COLORS, 250)
         barDataSet.valueTextColor = Color.BLACK
         barDataSet.valueTextSize = 15f
+
+        recycler_view.apply {
+            // set a LinearLayoutManager to handle Android
+            // RecyclerView behavior
+            layoutManager = LinearLayoutManager(activity)
+            // set the custom adapter to the RecyclerView
+            adapter = RvAdapter()
+        }
 
     }
 
